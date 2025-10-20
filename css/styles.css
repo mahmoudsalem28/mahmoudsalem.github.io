@@ -1,0 +1,112 @@
+/* Auteur : Mahmoud Salem | Cours : ICS3UC */
+
+/* css/styles.css - Fichier externe partagé (styles communs)
+   Auteur : Mahmoud Salem
+*/
+
+/* style commun */
+body {
+  margin: 2em; /* Ajoute une marge autour de toute la page */
+  padding: 2em; /* Ajoute de l’espace intérieur à la page */
+  font-family: Georgia, serif; /* Définit la police principale du site */
+  text-align: center; /* Centre le texte sur la page */
+}
+
+img {
+  border: 10px solid #100; /* Ajoute une bordure noire autour des images */
+}
+
+/* Classe appliquée aux pages qui doivent partager le même look (index + biographie) */
+.page-commun {
+  background-image: linear-gradient(to right, #73AFE7, #9BC6EE); /* Arrière-plan en dégradé bleu (effet ciel) */
+  background-size: cover; /* Fait couvrir tout l’écran par le fond */
+  background-position: center; /* Centre le fond */
+  color: black; /* Définit la couleur du texte */
+}
+/* Source background-image : https://developer.mozilla.org/fr/docs/Web/CSS/background-image */
+
+.titre-site {
+  color: white; /* Titre principal en blanc */
+  margin-bottom: 1em; /* Espace sous le titre */
+}
+
+/* Barre de navigation commune */
+/* Source : https://www.w3schools.com/css/css_navbar_horizontal.asp */
+.nav {
+  list-style-type: none; /* Supprime les puces de la liste */
+  margin: 0 auto; /* Centre la barre de navigation horizontalement */
+  padding: 0; /* Enlève l’espace intérieur de la liste */
+  overflow: hidden; /* Cache tout débordement visuel */
+  background-color: #123456; /* Couleur de fond de la barre */
+  width: fit-content; /* Ajuste la largeur au contenu */
+  border-radius: 8px; /* Coins arrondis */
+}
+
+.nav li {
+  display: inline-block; /* Aligne les éléments du menu horizontalement */
+}
+
+.nav li a {
+  display: block; /* Fait de chaque lien un bloc cliquable */
+  color: white; /* Texte en blanc */
+  text-align: center; /* Centre le texte dans chaque bouton */
+  padding: 14px 16px; /* Espace intérieur pour agrandir les boutons */
+  text-decoration: none; /* Supprime le soulignement */
+}
+
+.nav li a:hover {
+  background-color: #111111; /* Change la couleur du fond au survol */
+}
+
+/* Boîte principale (utilisée sur plusieurs pages) */
+/* Source transparence : https://www.w3schools.com/css/css_image_transparency.asp */
+.boite {
+  display: inline-block; /* Permet à la boîte d’être centrée et contenue */
+  text-align: left; /* Aligne le texte à gauche à l’intérieur de la boîte */
+  border: 0.2em solid #c3f7eb; /* Bordure bleu pâle */
+  background-color: rgba(255, 255, 255, 0.6); /* Fond blanc semi-transparent */
+  padding: 1em; /* Espace intérieur */
+  margin: 1em; /* Espace extérieur */
+  width: 60%; /* Largeur de la boîte */
+  color: black; /* Couleur du texte */
+}
+
+/* Styles spécifiques pour le poème et le voyage */
+.poem {
+  color: #4c32a8; /* Texte violet pour le poème */
+  font-size: 30px; /* Texte de grande taille */
+}
+
+.voyage {
+  color: #1a9191; /* Couleur turquoise */
+  font-style: italic; /* Texte en italique */
+  font-weight: bold; /* Texte en gras */
+  font-size: 30px; /* Taille de texte */
+}
+
+/* Tableau commun */
+/* Source transparence : https://www.w3schools.com/css/css_image_transparency.asp */
+/* Source border-collapse : https://www.w3schools.com/cssref/pr_border-collapse.php */
+table {
+  margin: 2em auto; /* Centre le tableau et ajoute une marge */
+  width: 90%; /* Largeur du tableau */
+  background-color: rgba(255, 255, 255, 0.6); /* Fond semi-transparent */
+  color: black; /* Couleur du texte */
+  border-collapse: collapse; /* Fusionne les bordures pour un effet propre */
+}
+
+th, td {
+  padding: 1em; /* Espace intérieur des cellules */
+  border: 2px solid #21b8b5; /* Bordure turquoise */
+}
+
+th {
+  background-color: #2D89CC; /* Couleur de fond bleue pour l’en-tête */
+  color: white; /* Texte blanc pour contraster */
+}
+
+/* petites notes */
+.petit {
+  font-size: 0.9em; /* Texte légèrement plus petit */
+  color: #ffffff; /* Couleur blanche */
+}
