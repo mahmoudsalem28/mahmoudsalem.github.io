@@ -1,0 +1,106 @@
+<!-- Auteur : Mahmoud Salem | Cours : ICS3UC -->
+<!-- biographie.html - Page biographique -->
+
+<!DOCTYPE html>
+<html lang="fr">
+  <!-- L’attribut lang="fr" indique que le contenu de la page est en français. -->
+  <!-- Source : https://www.w3.org/International/questions/qa-html-language-declarations -->
+
+  <head>
+    <!-- Définit le jeu de caractères utilisé par le document (UTF-8 permet d’afficher tous les caractères, y compris les accents). -->
+    <!-- Source : https://developer.mozilla.org/fr/docs/Web/HTML/Element/meta#charset -->
+    <meta charset="UTF-8">
+
+    <!-- Permet d’adapter la mise en page du site à la taille de l’écran (téléphone, tablette, ordinateur). -->
+    <!-- Source : https://developer.mozilla.org/fr/docs/Web/HTML/Viewport_meta_tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Biographie - Mahmoud Salem</title>
+
+    <!-- Lien vers la feuille de style externe pour la mise en forme du site. -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body class="page-commun">
+    <!-- <header> contient le titre principal et le menu de navigation. -->
+    <!-- Source : https://developer.mozilla.org/fr/docs/Web/HTML/Element/header -->
+    <header>
+      <h1 class="titre-site">Mahmoud Salem</h1>
+      <nav>
+        <!-- La balise <nav> indique une zone de navigation (liens vers les autres pages du site). -->
+        <ul class="nav">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="poeme.html">Poème</a></li>
+          <li><a href="voyage.html">Voyage préféré</a></li>
+          <li><a href="biographie.html">Biographie</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- <main> contient le contenu principal unique de la page. -->
+    <!-- Source : https://developer.mozilla.org/fr/docs/Web/HTML/Element/main -->
+    <main>
+      <h1>Biographie</h1>
+
+      <!-- <section> représente une partie du contenu. -->
+      <!-- Source : https://developer.mozilla.org/fr/docs/Web/HTML/Element/section -->
+      <section class="boite">
+        <h3><i><b><center>À propos de moi :</center></b></i></h3>
+        <p>
+          Mon pseudonyme sur Internet est <b>MoSalah11.</b>
+          J’aime apprendre de nouveaux langages de programmation.
+          J’ai déjà appris un peu de 
+          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>, 
+          ainsi que le 
+          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a> 
+          et le 
+          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">CSS</a>.
+          J’aime aussi jouer au 
+          <a href="https://en.wikipedia.org/wiki/Association_football" target="_blank">soccer</a>, 
+          passer du temps dehors et aller au gym pour rester actif.
+          En plus, j’adore lire et regarder des films pendant mon temps libre.
+          Je suis aussi un grand fan de soccer — j’aime regarder les matchs et jouer avec mes amis.
+          Mon équipe préférée est 
+          <a href="https://en.wikipedia.org/wiki/Liverpool_F.C." target="_blank">Liverpool FC</a>, 
+          que je soutiens depuis longtemps!
+        </p>
+      </section>
+
+      <!-- <figure> sert à regrouper une image et sa légende (<figcaption>). -->
+      <!-- Source : https://developer.mozilla.org/fr/docs/Web/HTML/Element/figure -->
+      <figure>
+        <img src="images/mosalah.jpg" alt="Photo de joueur de soccer Mohammed Salah" width="500">
+        <figcaption>
+          Ceci est mon joueur préféré, Mohamed Salah. Il joue pour Liverpool FC depuis 2017.
+          Il est égyptien, tout comme moi, alors cette image me représente bien.
+          J’aime le soccer, et comme il est mon joueur préféré, je m’inspire beaucoup de lui.
+          Son talent, sa détermination et sa fierté pour son pays me motivent chaque jour.
+        </figcaption>
+      </figure>
+
+      <!-- Tableau présentant les compétences et leurs niveaux. -->
+      <table>
+        <tr>
+          <th>Compétence</th>
+          <th>Niveau</th>
+        </tr>
+        <tr>
+          <td><b>HTML</b></td>
+          <td>Compétent</td>
+        </tr>
+        <tr>
+          <td><b>CSS</b></td>
+          <td>Compétent</td>
+        </tr>
+        <tr>
+          <td><b>JavaScript</b></td>
+          <td>Débutant</td>
+        </tr>
+        <tr>
+          <td><b>Python</b></td>
+          <td>Débutant</td>
+        </tr>
+      </table>
+    </main>
+  </body>
+</html>
