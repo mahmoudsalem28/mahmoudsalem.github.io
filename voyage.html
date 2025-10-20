@@ -1,0 +1,155 @@
+<!-- Auteur : Mahmoud Salem | Cours : ICS3UC | -->
+<!-- voyage.html - Page du voyage préféré -->
+<!DOCTYPE html>
+<html lang="fr">
+  <!-- L’attribut lang="fr" indique que le contenu de la page est en français -->
+  <!-- Source : https://www.w3.org/International/questions/qa-html-language-declarations -->
+
+  <head>
+    <style>
+      body {
+        background: linear-gradient(to top left, #5bb4d9, #aed9eb);
+      }
+    </style>
+
+    <meta charset="UTF-8">
+    <!-- La balise <meta charset="UTF-8"> définit l'encodage des caractères pour la page -->
+    <!-- Source : https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/charset -->
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Permet d’adapter la largeur et le zoom de la page à l’écran de l’appareil pour qu’elle s’affiche correctement sur mobiles et tablettes -->
+    <!-- Source : https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/viewport -->
+
+    <title>Voyage préféré - Le Caire</title>
+    <!-- Le titre de la page affiché dans l’onglet du navigateur -->
+
+    <!-- Lien vers le style externe pour la mise en forme commune -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <header>
+      <!-- La balise <header> définit l’en-tête de la page contenant le titre et la navigation principale -->
+      <!-- Source : https://www.w3schools.com/tags/tag_header.asp -->
+      <h1 class="titre-site">Mahmoud Salem</h1>
+
+      <nav>
+        <!-- Barre de navigation avec liens vers les autres pages du site -->
+        <ul class="nav">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="poeme.html">Poème</a></li>
+          <li><a href="voyage.html">Voyage préféré</a></li>
+          <li><a href="biographie.html">Biographie</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- La balise <main> contient le contenu principal unique de la page -->
+      <!-- Source : https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main -->
+
+      <h1 class="voyage">Le Caire</h1>
+
+      <section class="boite">
+        <!-- La balise <section> regroupe un contenu de la page -->
+        <!-- Source : https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section -->
+        <p><center>
+          Le Caire, capitale de l'Égypte, est une ville fascinante où l'ancien et le moderne coexistent harmonieusement.
+          Située sur les rives du majestueux Nil, elle est l'une des plus grandes métropoles du monde arabe.
+          Le Caire est surtout célèbre pour ses monuments historiques, comme les célèbres pyramides de Gizeh, le Sphinx,
+          et la majestueuse mosquée Mohammed Ali. La ville abrite également des trésors culturels inestimables, notamment
+          au musée égyptien, qui renferme des artefacts datant de l'Égypte ancienne, dont le célèbre masque de Toutankhamon.
+          Mais le Caire ne se limite pas à son passé glorieux : c'est aussi une ville dynamique où se mêlent le bruit des voitures,
+          les rires des enfants, et les chants des marchands dans les souks colorés. Le quartier de Khan El Khalili, par exemple
+          est un labyrinthe de ruelles étroites remplies de souvenirs, de bijoux et de textiles traditionnels. La cuisine cairote,
+          avec des plats comme le koshari, les falafels et les pâtisseries orientales, est un véritable festin pour les sens.
+          La ville est aussi un centre économique et politique majeur, avec une population diverse et cosmopolite.
+          Malgré les défis urbains, tels que la congestion du trafic et la pollution, le Caire reste une ville vivante, 
+          pleine de charme et de contradictions, offrant à ses visiteurs une expérience inoubliable entre tradition et modernité.
+        </center></p>
+      </section>
+
+      <h1 class="voyage">Sites intéressants à visiter :</h1>
+
+      <div class="list">
+        <ol type="I" class="voyage">
+          <li>Les Pyramides de Gizeh</li>
+          <br>
+          <figure>
+            <!-- La balise <figure> permet d'inclure un média et sa description -->
+            <!-- Source : https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure -->
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/7e/7d/2c/pyramids-of-giza.jpg?w=900&h=500&s=1" alt="Pyramides" width="900">
+            <figcaption class="petit">Les Pyramides de Gizeh — Image illustrative</figcaption>
+            <!-- La balise <figcaption> ajoute une légende au contenu de la figure -->
+            <!-- Source : https://www.w3schools.com/tags/tag_figcaption.asp -->
+          </figure>
+          <br><br>
+
+          <li>Le Sphinx</li>
+          <br>
+          <figure>
+            <img src="https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_3840,h_1920,g_auto/dpr_auto/f_auto/q_auto:eco/v1/the-sphinx-gettyimages-1183584133?_a=BAVAZGID0" alt="Sphinx" width="900">
+            <figcaption class="petit">Le Sphinx — Image illustrative</figcaption>
+          </figure>
+          <br><br>
+
+          <li>Musée égyptien du Caire</li>
+          <br>
+          <figure>
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/d7/b7/e4.jpg" alt="Musée" width="900">
+            <figcaption class="petit">Musée égyptien — Image illustrative</figcaption>
+          </figure>
+        </ol>
+      </div>
+
+      <h2 class="voyage">Mets populaires :</h2>
+
+      <table>
+        <!-- Tableau pour présenter les plats traditionnels, descriptions et images -->
+        <tr>
+          <th>Plat traditionnel</th>
+          <th>Description</th>
+          <th>Image</th>
+        </tr>
+
+        <tr>
+          <td><b>Koshary</b></td>
+          <td>
+            Le koshary est le plat national d'Égypte et une nourriture de rue très populaire en Égypte,
+            composé d'un mélange de pâtes, de riz, de lentilles, de pois chiches et d'oignons frits,
+            le tout garni d'une sauce tomate à l'ail et d'une sauce vinaigrée à l'ail.
+          </td>
+          <td><img src="https://www.chocolatesandchai.com/wp-content/uploads/2023/02/Egyptian-Koshari-1.jpg" alt="Koshary" width="210"></td>
+        </tr>
+
+        <tr>
+          <td><b>Molokhiya</b></td>
+          <td>
+            La molokhia égyptienne est un ragoût fait de feuilles de corète (ou mauve),
+            une plante herbeuse qui pousse en Égypte, servie avec du poulet et du riz,
+            dont le goût est à la fois terreux, herbacé, et d'une texture baveuse caractéristique.
+          </td>
+          <td><img src="https://eyesclosedcooking.com/wp-content/uploads/2023/01/Egyptian_Molokhia_1.jpg" alt="Molokhiya" width="210"></td>
+        </tr>
+
+        <tr>
+          <td><b>Kunafa</b></td>
+          <td>
+            Le kunafa (ou knafeh) est une pâtisserie orientale très populaire au Moyen-Orient,
+            qui consiste en une couche de pâte fine (cheveux d'ange ou kadaïf)
+            entre deux couches de fromage fondant ou de crème.
+          </td>
+          <td><img src="https://images.squarespace-cdn.com/content/v1/5f56423f4aca615934476295/9aabfbf2-54c5-4d95-bc86-9147af26aaa1/image.jpeg" alt="Kunafa" width="200"></td>
+        </tr>
+      </table>
+
+    </main>
+
+    <footer>
+      <!-- La balise <footer> définit le pied de la page (informations de contact, copyright, sources) -->
+      <!-- Source : https://www.w3schools.com/tags/tag_footer.asp -->
+      <p class="petit">Sources images : TripAdvisor, Getty Images, etc.</p>
+    </footer>
+
+  </body>
+</html>
