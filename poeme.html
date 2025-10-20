@@ -1,0 +1,108 @@
+<!-- Auteur : Mahmoud Salem | Cours : ICS3UC | -->
+<!-- poeme.html - Page du poème -->
+
+<!DOCTYPE html>
+<html lang="fr">
+  <!-- L’attribut lang="fr" indique que le contenu de la page est en français -->
+  <!-- Source : https://www.w3.org/International/questions/qa-html-language-declarations -->
+
+  <head>
+    <meta charset="UTF-8">
+    <!-- Définit l’encodage de caractères pour la page (UTF-8 pour supporter tous les caractères) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Permet d’adapter la largeur et le zoom de la page à l’écran de l’appareil -->
+    <!-- Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/viewport -->
+
+    <title>Poème - The Raven</title>
+    <!-- Titre de la page affiché dans l’onglet du navigateur -->
+
+    <!-- Lien vers le style externe (commun pour toutes les pages) -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Style interne spécifique à cette page -->
+    <style>
+      body { 
+        background-color: #5286AB; /* Couleur de fond spécifique à la page du poème */
+      }
+
+      .boite-poeme { 
+        background-color: rgba(124, 116, 187, 0.9); /* Boîte semi-transparente pour le poème */
+        border: 0.5em solid #5c52ab; /* Bordure épaisse et colorée autour de la boîte */
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <!-- La balise <header> définit l’en-tête contenant le titre et la navigation principale -->
+      <!-- Source : https://www.w3schools.com/tags/tag_header.asp -->
+      <h1 class="titre-site">Mahmoud Salem</h1>
+
+      <!-- Barre de navigation commune -->
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="poeme.html">Poème</a></li>
+          <li><a href="voyage.html">Voyage préféré</a></li>
+          <li><a href="biographie.html">Biographie</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- La balise <main> contient le contenu principal unique de la page -->
+      <!-- Source : https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/main -->
+
+      <h1 class="poem">Poem</h1>
+      <hr> <!-- Ligne horizontale pour séparer le titre du contenu -->
+      <h2 class="poem">The Raven</h2>
+
+      <!-- Section contenant le poème -->
+      <section class="boite-poeme boite">
+        <p>
+          <!-- Le poème (en anglais). Respect du droit d'auteur: source indiquée -->
+          Edgar Allan Poe, 1809–1849<br><br>
+
+          Once upon a midnight dreary, while I pondered, weak and weary,<br>
+          Over many a quaint and curious volume of forgotten lore—<br>
+          While I nodded, nearly napping, suddenly there came a tapping,<br>
+          As of someone gently rapping, rapping at my chamber door—<br>
+          "’Tis some visitor," I muttered, "tapping at my chamber door—<br>
+          Only this and nothing more."<br><br>
+
+          Ah, distinctly I remember it was in the bleak December;<br>
+          And each separate dying ember wrought its ghost upon the floor.<br>
+          Eagerly I wished the morrow;—vainly I had sought to borrow<br>
+          From my books surcease of sorrow—sorrow for the lost Lenore—<br>
+          For the rare and radiant maiden whom the angels name Lenore—<br>
+          Nameless <i>here</i> for evermore.
+        </p>
+      </section>
+
+      <!-- Figure contenant une image illustrative du poème -->
+      <figure>
+        <!-- La balise <figure> est utilisée pour regrouper une image et sa légende -->
+        <!-- Source : https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure -->
+        <img 
+          src="https://tremblantexpress.com/wp-content/uploads/2020/10/AdobeStock_182208158.jpeg" 
+          alt="Image de corbeau" 
+          width="550"
+        >
+        <!-- L’attribut alt fournit une description de l’image pour l’accessibilité -->
+
+        <figcaption>
+          <!-- La balise <figcaption> fournit une légende pour l’image -->
+          <!-- Source : https://www.w3schools.com/tags/tag_figcaption.asp -->
+          Image illustrative — corbeau. Source image : Tremblant Express
+        </figcaption>
+      </figure>
+
+      <!-- Lien vers la source originale du poème -->
+      <p>
+        <a href="https://www.poetryfoundation.org/poems/48860/the-raven" target="_blank">
+          Source de Edgar Allan Poe: The Raven
+        </a>
+      </p>
+    </main>
+  </body>
+</html>
